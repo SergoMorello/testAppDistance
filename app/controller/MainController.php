@@ -5,12 +5,7 @@ use Location\Distance\Vincenty;
 
 class MainController extends controller {
 	public function index() {
-		
-
-		$coordinate1 = new Coordinate(19.820664, -155.468066);
-		$coordinate2 = new Coordinate(20.709722, -156.253333);
 		return View('home');
-		dd($coordinate1->getDistance($coordinate2, new Vincenty()));
 	}
 
 	private function getGeo($adr) {
